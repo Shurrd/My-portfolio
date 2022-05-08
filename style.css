@@ -239,12 +239,13 @@
   justify-content: center;
   align-items: center;
   color: rgb(221, 219, 215);
-  transition: 1s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 .skills-card i {
   font-size: 5rem;
   padding: 30px;
   margin-left: 70px;
+  transition: 0.4s all;
 }
 .skills-card .container {
   font-size: 1.5rem;
@@ -252,6 +253,9 @@
 }
 .skills-card .webskills:hover {
   color: var(--hoverColor);
+}
+.skills-card i:hover {
+  font-size: 6rem;
 }
 
 /* ================ */
