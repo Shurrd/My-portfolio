@@ -5,8 +5,6 @@ const navbar = document.getElementById("nav");
 window.addEventListener("scroll", function () {
   const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
-  console.log(scrollHeight);
-  console.log(navHeight);
   if (scrollHeight > navHeight) {
     navbar.classList.add("fixed-nav");
   } else {
@@ -14,17 +12,29 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// section scroll
+// active section
 
-const sections = document.querySelectorAll(".section");
-const navItem = document.querySelectorAll(".nav-item");
-let current = "";
-window.addEventListener("scroll", function () {
-  sections.forEach(function (section) {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.getBoundingClientRect().height;
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
-    }
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(function (navLink) {
+  navLink.addEventListener("click", function () {
+    navLinks.forEach(function (nav) {
+      nav.classList.remove("active");
+    });
+    navLink.classList.add("active");
   });
 });
+
+const sections = document.querySelectorAll(".section");
+
+function changeLinkState() {
+  let index = sections.length;
+
+  while (--index && window.scrollY + 250 < sections[index].offsetTop) {}
+
+  navLinks.forEach((link) => link.classList.remove("active"));
+  navLinks[index].classList.add("active");
+}
+
+changeLinkState();
+window.addEventListener("scroll", changeLinkState);
