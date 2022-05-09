@@ -13,3 +13,18 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("fixed-nav");
   }
 });
+
+// section scroll
+
+const sections = document.querySelectorAll(".section");
+const navItem = document.querySelectorAll(".nav-item");
+let current = "";
+window.addEventListener("scroll", function () {
+  sections.forEach(function (section) {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.getBoundingClientRect().height;
+    if (pageYOffset >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+});

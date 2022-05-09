@@ -204,6 +204,9 @@
 /* START OF ABOUT */
 /* ================ */
 
+#about {
+  margin-top: 100px;
+}
 .section-1 #greyout {
   margin: 30px auto 0px auto;
   text-align: center;
