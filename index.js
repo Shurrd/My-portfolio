@@ -25,6 +25,8 @@ navLinks.forEach(function (navLink) {
   });
 });
 
+// adding active class on scroll
+
 const sections = document.querySelectorAll(".section");
 
 function changeLinkState() {
