@@ -534,5 +534,38 @@
 /* ================ */
 /* END OF SKILLS */
 /* ================ */
+.top-link {
+  background-color: var(--hoverColor);
+  right: 3rem;
+  bottom: 3rem;
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  animation: bounce 2s ease-in-out infinite;
+  border-radius: 20%;
+  visibility: hidden;
+}
+.top-link i {
+  color: white;
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.2rem;
+  font-size: 1.5rem;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
 
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*# sourceMappingURL=styles.css.map */

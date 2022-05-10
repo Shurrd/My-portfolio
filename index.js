@@ -10,6 +10,17 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("fixed-nav");
   }
+
+  // START OF TOP LINK
+
+  const topLink = document.querySelector(".top-link");
+  if (scrollHeight >= 1000) {
+    topLink.classList.add("show-link");
+  } else {
+    topLink.classList.remove("show-link");
+  }
+
+  // END OF TOPLINK
 });
 
 // END OF FIXED NAVBAR
