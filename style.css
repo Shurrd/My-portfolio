@@ -589,10 +589,10 @@
 #offerings {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 600;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
   border-bottom: 3px solid var(--hoverColor);
   padding-bottom: 20px;
 }
@@ -673,4 +673,132 @@
 /* END OF SERVICES */
 /* ================ */
 
+/* ================ */
+/* START OF PORTFOLIO */
+/* ================ */
+
+#portfolio {
+  margin-top: 140px;
+  margin-bottom: 90px;
+}
+
+.portfolios {
+  margin-top: 3rem;
+}
+
+.portfolios .portfolio-item {
+  position: relative;
+  border-radius: 15px;
+}
+
+.portfolios .portfolio-item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.portfolios .portfolio-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--hoverColor);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.portfolios .portfolio-item .hover-items .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: var(--hoverColor);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none !important;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon i {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none !important;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
+  background-color: white;
+  text-decoration: none !important;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+  color: var(--hoverColor);
+  text-decoration: none !important;
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* ================ */
+/* END OF PORTFOLIO */
+/* ================ */
+
+/* ================ */
+/* START OF CONTACT */
+/* ================ */
+
+/* ================ */
+/* END OF CONTACT */
+/* ================ */
 /*# sourceMappingURL=styles.css.map */
