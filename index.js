@@ -1,4 +1,4 @@
-// fixed navbar
+// START OF FIXED NAVBAR
 
 const navbar = document.getElementById("nav");
 
@@ -12,7 +12,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// active section
+// END OF FIXED NAVBAR
+
+// START OF ACTIVE SECTION
 
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -25,7 +27,9 @@ navLinks.forEach(function (navLink) {
   });
 });
 
-// adding active class on scroll
+// END OF ACTIVE SECTION
+
+// START OF ACTIVE NAV ON SCROLL
 
 const sections = document.querySelectorAll(".section");
 
@@ -40,3 +44,5 @@ function changeLinkState() {
 
 changeLinkState();
 window.addEventListener("scroll", changeLinkState);
+
+// START OF ACTIVE NAV ON SCROLL
