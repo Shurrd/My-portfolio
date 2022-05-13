@@ -259,6 +259,11 @@
   /* border: 1px solid red; */
 }
 
+.carousel {
+  border: 1px solid rgb(155, 153, 153);
+  box-shadow: 5px 6px 21px -6px rgba(0, 0, 0, 1);
+}
+
 .carousel .carousel-control-prev span,
 .carousel-control-next span {
   background: white;
@@ -798,7 +803,131 @@
 /* START OF CONTACT */
 /* ================ */
 
+#contact .container-fluid {
+  background-color: black;
+  height: fit-content;
+}
+
+#contact-page {
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
+#contact address {
+  padding-bottom: 18px;
+}
+
+#contact .contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+form {
+  margin-top: 30px;
+}
+#contact i {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  color: #d43f52;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  margin-right: 20px;
+}
+#contact .form-control {
+  background: transparent;
+  border: 2px solid #999;
+  border-radius: 4px;
+  box-shadow: none;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+#contact input {
+  height: 50px;
+}
+#contact input[type="submit"] {
+  background: var(--hoverColor);
+  border: 2px solid transparent;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+#contact input[type="submit"]:hover {
+  background: #ffffff;
+  color: var(--hoverColor);
+}
+
 /* ================ */
 /* END OF CONTACT */
 /* ================ */
-/*# sourceMappingURL=styles.css.map */
+
+/* ================ */
+/* START OF FOOTER */
+/* ================ */
+
+footer {
+  border-top: 1px solid #090909;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: black;
+}
+footer hr {
+  width: 100px;
+}
+footer p a {
+  text-decoration: none !important;
+  color: var(--hoverColor);
+}
+footer p a:hover {
+  color: var(--hoverColor);
+}
+
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+.social-icon li a {
+  border-radius: 50%;
+  color: #606060;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  margin-right: 10px;
+}
+.social-icon li a:hover {
+  color: var(--hoverColor);
+}
+
+/* ================ */
+/* END OF FOOTER */
+/* ================ */
+
+/* ================ */
+/* START OF ANIMATIONS */
+/* ================ */
+
+#about-page {
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ================ */
+/* END OF ANIMATIONS */
+/* ================ */
