@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- start of navbar -->
@@ -162,7 +163,7 @@
 
     <!-- start of about -->
     <section class="section section-1" id="about-page">
-      <div class="head-title">
+      <div class="head-title" data-aos="fade-left">
         <h1 id="greyout">ABOUT ME</h1>
         <h1 id="solid">ABOUT ME</h1>
       </div>
@@ -182,6 +183,7 @@
             id="carouselExampleCaptions"
             class="carousel slide carousel-fade"
             data-bs-ride="carousel"
+            data-aos="zoom-in-up"
           >
             <div class="carousel-indicators">
               <button
@@ -271,7 +273,7 @@
                   class="section-header text-center wow zoomIn"
                   data-wow-delay="0.1s"
                 >
-                  <div class="head-title" id="resume">
+                  <div class="head-title" id="resume" data-aos="fade-up-right">
                     <h1 id="greyout">MY EXPERIENCE</h1>
                     <h1 id="solid">MY EXPERIENCE</h1>
                   </div>
@@ -280,6 +282,8 @@
                   <div
                     class="timeline-item left wow slideInLeft"
                     data-wow-delay="0.1s"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
                   >
                     <div class="timeline-text">
                       <div class="timeline-date">2045 - 2050</div>
@@ -294,6 +298,8 @@
                   <div
                     class="timeline-item right wow slideInRight"
                     data-wow-delay="0.1s"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
                   >
                     <div class="timeline-text">
                       <div class="timeline-date">2045 - 2050</div>
@@ -308,6 +314,8 @@
                   <div
                     class="timeline-item left wow slideInLeft"
                     data-wow-delay="0.1s"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
                   >
                     <div class="timeline-text">
                       <div class="timeline-date">2045 - 2050</div>
@@ -322,6 +330,8 @@
                   <div
                     class="timeline-item right wow slideInRight"
                     data-wow-delay="0.1s"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
                   >
                     <div class="timeline-text">
                       <div class="timeline-date">2045 - 2050</div>
@@ -343,11 +353,15 @@
         <!-- start of skills -->
 
         <section class="section" id="skills-page">
-          <div class="head-title">
+          <div class="head-title" data-aos="slide-up" data-aos-duration="1000">
             <h1 id="greyout">SKILLS</h1>
             <h1 id="solid">SKILLS</h1>
           </div>
-          <div class="row skills-card">
+          <div
+            class="row skills-card"
+            data-aos="slide-left"
+            data-aos-duration="1500"
+          >
             <div class="col-sm-12 col-md-6 col-lg-4 webskills">
               <i class="fa-brands fa-html5"></i>
               <div class="container">HTML5</div>
@@ -393,7 +407,12 @@
     <!-- start of services -->
 
     <section class="section-1 section" id="services-page">
-      <div class="head-title" id="services">
+      <div
+        class="head-title"
+        id="services"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
         <h1 id="greyout">MY SERVICES</h1>
         <h1 id="solid">MY SERVICES</h1>
       </div>
@@ -403,7 +422,11 @@
       <div class="container">
         <div class="row good">
           <div class="feature_inner row">
-            <div class="col-lg-4 col-md-6">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="slide-left"
+              data-aos-duration="1000"
+            >
               <div class="feature_item">
                 <i class="fa-solid fa-code"></i>
                 <h4>Web Development</h4>
@@ -414,7 +437,11 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="slide-right"
+              data-aos-duration="1000"
+            >
               <div class="feature_item">
                 <i class="fa-solid fa-ruler-combined"></i>
                 <h4>Web Design</h4>
@@ -425,7 +452,11 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="slide-left"
+              data-aos-duration="1000"
+            >
               <div class="feature_item">
                 <i class="fa-solid fa-cube"></i>
                 <h4>BlockChain Development</h4>
@@ -452,7 +483,11 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="slide-up"
+            data-aos-duration="1000"
+          >
             <div class="portfolios">
               <div class="portfolio-item">
                 <div class="image"><img src="/img/education.jpg" alt="" /></div>
@@ -470,7 +505,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="slide-up"
+            data-aos-duration="1500"
+          >
             <div class="portfolios">
               <div class="portfolio-item">
                 <div class="image">
@@ -490,7 +529,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="slide-up"
+            data-aos-duration="2000"
+          >
             <div class="portfolios">
               <div class="portfolio-item">
                 <div class="image">
@@ -510,7 +553,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="slide-up"
+            data-aos-duration="1000"
+          >
             <div class="portfolios">
               <div class="portfolio-item">
                 <div class="image">
@@ -530,7 +577,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="slide-up"
+            data-aos-duration="1500"
+          >
             <div class="portfolios">
               <div class="portfolio-item">
                 <div class="image">
@@ -550,7 +601,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="slide-up"
+            data-aos-duration="2000"
+          >
             <div class="portfolios">
               <div class="portfolio-item">
                 <div class="image">
@@ -582,7 +637,11 @@
         <h1 id="greyout">CONTACT</h1>
         <h1 id="solid">CONTACT</h1>
       </div>
-      <div class="container-fluid">
+      <div
+        class="container-fluid"
+        data-aos="slide-right"
+        data-aos-duration="1500"
+      >
         <div class="row">
           <div
             class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp"
@@ -644,7 +703,8 @@
         <div class="row">
           <div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
             <p>
-              Copyright &copy; 2018 My Portfolio . Designed by
+              Copyright &copy; <span id="date"></span> My Portfolio . Designed
+              by
               <a href="https://github.com/Shurrd">Abraham</a>
             </p>
             <hr />
@@ -677,6 +737,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/index.js"></script>
   </body>
 </html>

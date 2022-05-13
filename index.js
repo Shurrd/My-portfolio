@@ -56,4 +56,13 @@ function changeLinkState() {
 changeLinkState();
 window.addEventListener("scroll", changeLinkState);
 
-// START OF ACTIVE NAV ON SCROLL
+// END OF ACTIVE NAV ON SCROLL
+
+// START OF DYNAMIC DATE
+
+let dynamicDate = document.getElementById("date");
+
+const newDate = new Date().getFullYear();
+dynamicDate.textContent = newDate;
+
+// END OF DYNAMIC DATE
