@@ -89,6 +89,9 @@
   .navbar .navbar-nav .active {
     color: white !important;
   }
+  .fixed-nav {
+    display: none;
+  }
 }
 
 /* ================ */
@@ -256,6 +259,7 @@
   font-size: 1.3rem;
   padding-left: 15px;
   padding-right: 15px;
+  line-height: 2rem;
   /* border: 1px solid red; */
 }
 
@@ -681,7 +685,11 @@
 /* ================ */
 /* START OF PORTFOLIO */
 /* ================ */
-
+.tools {
+  margin-top: 30px;
+  font-style: italic;
+  text-shadow: 0px 0px 10px 10px black;
+}
 #portfolio {
   margin-top: 140px;
   margin-bottom: 90px;
